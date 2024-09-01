@@ -1,0 +1,45 @@
+/* Basic reset and styling for the body */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #f4f4f4; /* Adding a background color for better contrast */
+}
+
+/* Styling for the file upload section */
+#file-upload-section {
+    margin-bottom: 20px;
+    text-align: center; /* Center the content */
+}
+
+/* Styling for the upload button */
+#uploadButton {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    display: inline-block; /* Ensure button is inline */
+}
+
+#uploadButton:hover {
+    background-color: #0056b3;
+}
+
+/* Map container dimensions */
+#map {
+    height: 700px; /* Increased height for better visibility */
+    width: 100%;
+    max-width: 1200px;
+    border: 1px solid #ccc;
+    margin-top: 20px; /* Adding margin to separate the map from the button */
+}
+
+/* Ensuring map tiles load properly by setting a minimum height */
+.leaflet-container {
+    min-height: 500px;
+}
